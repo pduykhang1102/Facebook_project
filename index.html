@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- cdn bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+
+    <!-- cdn font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- cdn font-awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sedgwick+Ave&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <section class="nav-bar">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid navigation-bar">
+                    <div class="logoo">
+                        <img class="logo" src="./images/Screenshot 2025-04-27 151433.png" alt="hình ảnh logo">
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                    <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active home" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active noti" href="#">Notification</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active messenger" href="./messenger.html"
+                                    target="_blank">Messenger</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar-button on-right">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link active log-out" href="./login.html">Log out</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active profile" href="./profile.html"><i
+                                        class="fa-solid fa-user"></i></a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <!-- Phần thân trang web -->
+    <section class="body">
+        <div class="container-fluid bodyyy ">
+            <div class="row">
+                <!-- Menu toolbar -->
+                <div class="col-3 feature-box menu ">
+                    <h5 style="font-weight: bold ;">Menu toolbar</h5>
+                    <div class="feature">
+                        <div style="display: flex;" class="user-group item">
+                            <i class="fa-solid fa-people-group"></i>
+                            <button style="border: none;"><a class="feature-title"
+                                    href="./friends.html">Friends</a></button>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div style="display: flex;" class="memories item">
+                            <i class="fa-solid fa-memory"></i>
+                            <button style="border: none;"><a class="feature-title" href="#">Memories</a></button>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div style="display: flex;" class="setting item">
+                            <i class="fa-solid fa-gear"></i>
+                            <button style="border: none;"><a class="feature-title" href="#">Setting</a></button>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div style="display: flex;" class="notification item">
+                            <i class="fa-solid fa-bell"></i>
+                            <button style="border: none;"><a class="feature-title" href="#">Notification</a></button>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div style="display: flex;" class="Online-market item ">
+                            <i class="fa-solid fa-bell"></i>
+                            <button style="border: none;"><a class="feature-title" href="#">Online market</a></button>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div style="display: flex;" class="Discover item ">
+                            <i class="fa-brands fa-internet-explorer"></i>
+                            <button style="border: none;"><a class="feature-title" href="#">Discover</a></button>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div style="display: flex;" class="Messenger item">
+                            <i class="fa-regular fa-message"></i>
+                            <button style="border: none;"><a class="feature-title" href="#">Messenger</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phần đăng bài viết -->
+                <div class="col-6 feature-box blog overflow-y-auto">
+                    <div class="card">
+                        <div class="card-body">
+                            <form action="">
+                                <img style="border-radius: 50%;" class="user-avatar"
+                                    src="./images/avatar_nguoi_dung.jpg" alt="user-avatar">
+                                <input style="border: none; border-radius: 20px;" class="input" type="text"
+                                    placeholder="What's on your mind" data-bs-toggle="modal"
+                                    data-bs-target="#modal_facebook">
+                                <!-- Modal -->
+                                <div class="modal fade" id="modal_facebook" tabindex="-1" aria-labelledby="modal_label" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="modal_label">Create post</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close">
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form action="" id="postForm">
+                                                    <textarea name="user_content" id="user_content" placeholder="What's on your mind"></textarea>
+
+                                                    <div class="add" id="add" style="border-color: black; border-radius: 12px;">
+                                                        <div class="add_title">
+                                                            <h5>Add to your post</h5>
+                                                        </div>
+                                                        <div class="image/videoArea">
+
+                                                        </div>
+                                                        <div class="image/video">
+                                                            <label for="image" class="file-btn"><i class="fa-solid fa-images"></i></label>
+                                                            <input type="file" id="image" accept="image/*" multiple style="display:none">
+
+                                                            <label for="video" class="file-btn-2"><i class="fa-solid fa-video"></i></label>
+                                                            <input type="file" id="video"  accept="video/*" multiple style="display:none">
+
+                                                        </div>
+                                                    </div>
+                                            
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn_post btn-primary"><p>Post</p></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sep2">
+                                    <hr>
+                                </div>
+
+                                <div class="option2">
+                                    <div class="op2">
+                                        <i class="fa-solid fa-camera "></i>
+                                        <p>Live video</p>
+                                    </div>
+                                    <div class="op2">
+                                        <i class="fa-solid fa-images"></i>
+                                        <p>Video/photo</p>
+                                    </div>
+                                    <div class="op2">
+                                        <i class="fa-solid fa-flag"></i>
+                                        <p>Life events</p>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card post">
+                        <div class="card-body">
+                            <div class="blog-title">
+                                <a href=""><img class="people-avatar" style="border-radius: 50% ;"
+                                        src="./images/avatar-1.jpg" alt="avatar-1"></a>
+                                <div class="name_time-posted">
+                                    <h7 class="card-title">Mưa ơi mưa đừng rơi</h7>
+                                    <p class="card-time-posted"><small class="text-body-secondary">Posted 20
+                                            minutesago</small></p>
+                                </div>
+                            </div>
+                            <p class="card-text">Nhiệt liệt chào mừng ngày thống nhất đất nước, 30/4!!! Vô cùng biết
+                                ơn những cha ông đời trước đã đổ máu để thế hệ trẻ ngày này được sống trong hòa bình
+                                ❤️🔥</p>
+                            <img src="./images/blog-1.jpg" class="card-img-bottom" alt="ảnh blog 1">
+                            <div class="d-flex justify-content-between mx-3 my-2" class="Review-comment-share">
+                                <div class="emotion-left">
+                                    <div class="review rsc">
+                                        <i class="fa-solid fa-thumbs-up like"></i>
+                                        <i class="fa-solid fa-heart heart"></i>
+                                        <p class="amount" style="font-weight: light;">4,5K</p>
+                                    </div>
+                                </div>
+                                <div class="emotion-right d-flex">
+                                    <div class=" rsc me-1">
+                                        <i class="fa-solid fa-comment comment"></i>
+                                        <p style="font-weight: light;" class="amount">10k</p>
+                                    </div>
+                                    <div class=" rsc">
+                                        <i class="fa-solid fa-share share"></i>
+                                        <p style="font-weight: light;" class="amount">30k</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class=" container-fluid button-for-rsc">
+                                <div class="row">
+                                    <div class="col-3 button-review">
+                                        <div class="rsc-2">
+                                            <button class="button-1">
+                                                <i class="fa-regular fa-thumbs-up like1 "></i>
+                                                <p>Thích</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 button-review">
+                                        <div class="rsc-2">
+                                            <button class="button-1">
+                                                <i class="fa-regular fa-comment comment1"></i>
+                                                <p>Bình luận</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 button-review">
+                                        <div class="rsc-2">
+                                            <button class="button-1">
+                                                <i class="fa-solid fa-share share1"></i>
+                                                <p>Chia sẻ</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 button-review">
+                                        <div class="rsc-2">
+                                            <button class="button-1">
+                                                <i class="fa-regular fa-paper-plane send1"></i>
+                                                <p>Send</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card post">
+                        <div class="card-body">
+                            <div class="blog-title">
+                                <a href=""><img class="people-avatar" style="border-radius: 50% ;"
+                                        src="./images/avatar-2.jpg" alt="avatar-1"></a>
+                                <div class="name_time-posted">
+                                    <h7 class="card-title">Jonny wick</h7>
+                                    <p class="card-time-posted"><small class="text-body-secondary">Posted 3 months
+                                            ago</small></p>
+                                </div>
+                            </div>
+                            <p class="card-text">Mọi thứ khác không quan trọng nữa</p>
+                            <img src="./images/blog-2.jpg" class="card-img-bottom" alt="ảnh blog 1">
+                            <div class="d-flex justify-content-between mx-3 my-2" class="Review-comment-share">
+                                <div class="emotion-left">
+                                    <div class="review rsc">
+                                        <i class="fa-solid fa-thumbs-up like"></i>
+                                        <i class="fa-solid fa-heart heart"></i>
+                                        <p class="amount" style="font-weight: light;">1,8k</p>
+                                    </div>
+                                </div>
+                                <div class="emotion-right d-flex">
+                                    <div class=" rsc me-1">
+                                        <i class="fa-solid fa-comment comment"></i>
+                                        <p style="font-weight: light;" class="amount">700</p>
+                                    </div>
+                                    <div class=" rsc">
+                                        <i class="fa-solid fa-share share"></i>
+                                        <p style="font-weight: light;" class="amount">800</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class=" container-fluid button-for-rsc">
+                                <div class="row">
+                                    <div class="col-3 button-review">
+                                        <div class="rsc-2">
+                                            <button class="button-1">
+                                                <i class="fa-regular fa-thumbs-up like1 "></i>
+                                                <p>Thích</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 button-review">
+                                        <div class="rsc-2">
+                                            <button class="button-1">
+                                                <i class="fa-regular fa-comment comment1"></i>
+                                                <p>Bình luận</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 button-review">
+                                        <div class="rsc-2">
+                                            <button class="button-1">
+                                                <i class="fa-solid fa-share share1"></i>
+                                                <p>Chia sẻ</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 button-review">
+                                        <div class="rsc-2">
+                                            <button class="button-1">
+                                                <i class="fa-regular fa-paper-plane send1"></i>
+                                                <p>Send</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="card post">
+                        <div class="card-body">
+                            <div class="blog-title">
+                                <a href=""><img class="people-avatar" style="border-radius: 50% ;"
+                                        src="./images/avatar-3.jpg" alt="avatar-1"></a>
+                                <div class="name_time-posted">
+                                    <a class="card-title" href="">
+                                        <h7>Amber héd </h7>
+                                    </a>
+                                    <p class="card-time-posted"><small class="text-body-secondary">Posted 1 week
+                                            ago</small></p>
+                                </div>
+                            </div>
+                            <p class="card-text">Em iu các cô các thầy</p>
+                            <img src="./images/blog-3.jpg" class="card-img-bottom" alt="ảnh blog 1">
+                            <div class="d-flex justify-content-between mx-3 my-2" class="Review-comment-share">
+                                <div class="emotion-left">
+                                    <div class="review rsc">
+                                        <i class="fa-solid fa-thumbs-up like"></i>
+                                        <i class="fa-solid fa-face-laugh-squint laugh"></i>
+                                        <i class="fa-solid fa-face-angry angry"></i>
+                                        <p class="amount" style="font-weight: light;">7</p>
+                                    </div>
+                                </div>
+                                <div class="emotion-right d-flex">
+                                    <div class=" rsc me-1">
+                                        <i class="fa-solid fa-comment comment"></i>
+                                        <p style="font-weight: light;" class="amount">700</p>
+                                    </div>
+                                    <div class=" rsc">
+                                        <i class="fa-solid fa-share share"></i>
+                                        <p style="font-weight: light;" class="amount">800</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class=" container-fluid button-for-rsc">
+                                <div class="row">
+                                    <div class="col-3 button-review">
+                                        <div class="rsc-2">
+                                            <button class="button-1">
+                                                <i class="fa-regular fa-thumbs-up like1 "></i>
+                                                <p>Thích</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 button-review">
+                                        <div class="rsc-2">
+                                            <button class="button-1">
+                                                <i class="fa-regular fa-comment comment1"></i>
+                                                <p>Bình luận</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 button-review">
+                                        <div class="rsc-2">
+                                            <button class="button-1">
+                                                <i class="fa-solid fa-share share1"></i>
+                                                <p>Chia sẻ</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 button-review">
+                                        <div class="rsc-2">
+                                            <button class="button-1">
+                                                <i class="fa-regular fa-paper-plane send1"></i>
+                                                <p>Send</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="card post">
+                        <div class="card-body">
+                            <div class="blog-title">
+                                <a href=""><img class="people-avatar" style="border-radius: 50% ;"
+                                        src="./images/avatar-4.jpg" alt="avatar-1"></a>
+                                <div class="name_time-posted">
+                                    <a class="card-title" href="">
+                                        <h7>Nít Phượng QUàng</h7>
+                                    </a>
+                                    <p class="card-time-posted"><small class="text-body-secondary">Posted 4 days
+                                            ago</small></p>
+                                </div>
+                            </div>
+                            <p class="card-text">Khoảnh khắc ngoại ngồi cùng với thằng cháu</p>
+                            <img src="./images/blog-4.jpg" class="card-img-bottom" alt="ảnh blog 1">
+                            <div class="d-flex justify-content-between mx-3 my-2" class="Review-comment-share">
+                                <div class="emotion-left">
+                                    <div class="review rsc">
+                                        <i class="fa-solid fa-thumbs-up like"></i>
+                                        <i class="fa-solid fa-face-laugh-squint laugh"></i>
+                                        <i class="fa-solid fa-heart heart"></i>
+                                        <p class="amount" style="font-weight: light;">7k</p>
+                                    </div>
+                                </div>
+                                <div class="emotion-right d-flex">
+                                    <div class=" rsc me-1">
+                                        <i class="fa-solid fa-comment comment"></i>
+                                        <p style="font-weight: light;" class="amount">683</p>
+                                    </div>
+                                    <div class=" rsc">
+                                        <i class="fa-solid fa-share share"></i>
+                                        <p style="font-weight: light;" class="amount">999</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class=" container-fluid button-for-rsc">
+                                <div class="row">
+                                    <div class="col-3 button-review">
+                                        <div class="rsc-2">
+                                            <button class="button-1">
+                                                <i class="fa-regular fa-thumbs-up like1 "></i>
+                                                <p>Thích</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 button-review">
+                                        <div class="rsc-2">
+                                            <button class="button-1">
+                                                <i class="fa-regular fa-comment comment1"></i>
+                                                <p>Bình luận</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 button-review">
+                                        <div class="rsc-2">
+                                            <button class="button-1">
+                                                <i class="fa-solid fa-share share1"></i>
+                                                <p>Chia sẻ</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 button-review">
+                                        <div class="rsc-2">
+                                            <button class="button-1">
+                                                <i class="fa-regular fa-paper-plane send1"></i>
+                                                <p>Send</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <!-- Bạn bè -->
+                <div class="col-3 friends-contact feature-box">
+                    <div class="title">
+                        <h5 style="font-weight: bold;">Your friends </h5>
+                        <i class="fa-solid fa-magnifying-glass search"></i>
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="friends">
+                        <div class="person">
+                            <img style="border-radius: 50%;" class="avatar" src="./images/yenn.jpg" alt="hình avatar">
+                            <p>Nguyễn Thị Yên</p>
+                        </div>
+                        <div class="person">
+                            <img style="border-radius: 50%;" class="avatar" src="./images/luongg.jpg" alt="hình avatar">
+                            <p> Lương Mạnh Yếu</p>
+                        </div>
+                        <div class="person">
+                            <img style="border-radius: 50%;" class="avatar" src="./images/robinhod.jpg"
+                                alt="hình avatar">
+                            <p>Robin hod</p>
+                        </div>
+                        <div class="person">
+                            <img style="border-radius: 50%;" class="avatar" src="./images/Daiphat.jpg"
+                                alt="hình avatar">
+                            <p>Đại Phát</p>
+                        </div>
+                        <div class="person">
+                            <img style="border-radius: 50%;" class="avatar" src="./images/Anhba.jpg" alt="hình avatar">
+                            <p>Anh ba</p>
+                        </div>
+                        <div class="person">
+                            <img style="border-radius: 50%;" class="avatar" src="./images/Vuahn.jpg" alt="hình avatar">
+                            <p>Vu Ahn</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
