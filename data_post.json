@@ -1,0 +1,94 @@
+[
+    {
+        "id": 1,
+        "user_image": "images/1.jpg",
+        "username": "Mưa ơi mưa đừng rơi",
+        "Content" : "Khoe với cả nhà.Bánh sáng nay của mình 😊 ",
+        "time": "20 minutes",
+        "image": "./images/banh_kem.jpg",
+         "video": " ",
+        "like": 0,
+        "love": 0,
+        "laugh": 0,
+        "sad": 0,
+        "angry": 0,
+        "share_counting": 0,
+        "comment_counting": 0,
+        "comment": ""
+    },
+    
+    {
+        "id": 2,
+        "user_image": "./images/maguire.jpg",
+        "username": "Nghệ sĩ nhân dân",
+        "Content" : "Đứa nào ?!! ",
+        "time": "2 hours",
+        "image": "./images/robot_count.jpg",
+         "video": " ",
+        "like": 0,
+        "love": 0,
+        "laugh": 0,
+        "sad": 0,
+        "angry": 0,
+        "share_counting": 0,
+        "comment_counting": 0,
+        "comment": ""
+    },
+    
+    {
+        "id": 3,
+        "user_image": "./images/diddy.jpg",
+        "username": "I love babies",
+        "Content" : "3 nhân dạng của Cardi B trong 3 ngày hầu toà vừa qua khiến luật sư đội bạn cũng hơi lú 😂 ",
+        "time": "1 day",
+        "image": "./images/cardib.jpg",
+         "video": " ",
+        "like": 0,
+        "love": 0,
+        "laugh": 0,
+        "sad": 0,
+        "angry": 0,
+        "share_counting": 0,
+        "comment_counting": 0,
+        "comment": ""
+    },
+
+    {
+        "id": 4,
+        "user_image": "./images/elonmao.jpg",
+        "username": "thái tử bắc kinh",
+        "Content" : "? ",
+        "time": "5 day",
+        "image": "./images/xetang.jpg",
+         "video": " ",
+        "like": 0,
+        "love": 0,
+        "laugh": 0,
+        "sad": 0,
+        "angry": 0,
+        "share_counting": 0,
+        "comment_counting": 0,
+        "comment": " "
+    },
+
+    {
+        "id": 5,
+        "user_image": "./images/onana.jpg",
+        "username": "30kg thì đổi tên",
+        "Content" : "Để build được bộ PC mơ ước bro chắc hẳn đã phải hi sinh nhiều lắm !  ",
+        "time": "7 day",
+        "image": "./images/pc.jpg",
+        "video": " ",
+        "like": 0,
+        "love": 0,
+        "laugh": 0,
+        "sad": 0,
+        "angry": 0,
+        "share_counting": 0,
+        "comment_counting": 0,
+        "comment": ""
+    }
+
+
+
+]

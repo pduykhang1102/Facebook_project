@@ -329,6 +329,17 @@ hr{
     resize: none
 }
 
+.clearImage{
+    background-color: #1957ff;
+    padding: 3px;
+    font-weight: bold;
+    border-color:  #1957ff;
+    border-radius: 10px;
+    color: white;
+    padding-right: 6px;
+    padding-left: 6px
+}
+
 #user_content:focus{
     outline: none
 }
@@ -360,3 +371,107 @@ hr{
     color: red
 }
 
+.button-1{
+    border: none;
+    background-color: white
+}
+
+.button-2{
+    border: none;
+    background-color: white
+}
+
+.button-3{
+     border: none;
+    background-color: white
+}
+
+.button-4{
+     border: none;
+    background-color: white
+}
+
+.icon_container{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 3px;
+    padding-top: 5px;
+    box-shadow:  0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 205px;
+    height: 40px;
+    margin-bottom: 5px
+}
+
+.icon{
+    border: none;
+    background-color: white;
+    font-size: 23px;
+    margin-right: 5px;
+    margin-left: 5px
+}
+
+#like > i{
+    color: blue;
+    font-size: 25px,
+}
+
+#love > i{
+    color: red;
+    font-size: 25px
+}
+
+#laugh > i{
+    color: yellow;
+    font-size: 25px
+}
+
+#sad > i {
+    color: yellow;
+    font-size: 25px
+}
+
+#angry > i{
+    color: rgb(237, 87, 87);
+    font-size: 25px
+}
+
+.emotion-left{
+    position: relative;
+}
+
+.icon_container{
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    bottom: 2px;
+}
+
+.review-rsc{
+    position: absolute;
+    z-index: 1;
+    margin: 7px
+}
+
+.card-body{
+    padding-bottom: 15px
+}
+
+.Review-comment-share{
+    padding-top: 3px;
+    padding-bottom: 3px
+}
+
+.rsc-2 > button > p{
+    margin-bottom: 0px;
+}
+
+.icon :hover{
+    animation: beat 0.6s infinite;
+}
+
+@keyframes beat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.3); } 
+}
